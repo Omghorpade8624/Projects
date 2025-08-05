@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Frontend Developer Portfolio with AI Chat UI" />
+  <title>My AI Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm OM</h1>
+    <p>Frontend Developer 🚀</p>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div id="project-filters">
+      <button class="filter" data-category="all">All</button>
+      <button class="filter" data-category="html">HTML/CSS</button>
+      <button class="filter" data-category="js">JavaScript</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card" data-category="html">
+        <h3>Landing Page</h3>
+        <p>Beautiful responsive landing page</p>
+      </div>
+      <div class="project-card" data-category="js">
+        <h3>To-Do App</h3>
+        <p>JS-powered to-do list with local storage</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot">
+    <div class="chat-header">AI Chat</div>
+    <div class="chat-box" id="chat-box">
+      <div class="bot">Hi! I'm a mock AI. Ask me anything!</div>
+    </div>
+    <input id="chat-input" type="text" placeholder="Say something..." />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
